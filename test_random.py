@@ -13,4 +13,4 @@ while True:
     elif temp >answer :
         print("Bigger")
     else :
-        print("Smaller!")
+        print("Smaller!!")
