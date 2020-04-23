@@ -19,7 +19,7 @@ class ConstClass:
     sleepSecond=300
 
     #取得ファイルの保存先
-    dst_dir =r"D:\Users\jumpei-iwano\temp"
+    dst_dir =r"D:\Users\temp"
 
 
 

@@ -57,8 +57,6 @@ def GetCompanyDocument(documentList,version,type):
     params = {
       "type":type
     }
-    print(url)
-    print("終わり")
     if type == ConstClass.document_type2:
       filename =  docid + ".pdf"
     else :
