@@ -34,12 +34,28 @@ class GetDocument:
 
         for result in self.res_text["results"]:
             count +=1
-            #if result['results']['docDescription'] is not None:
             if result['docDescription'] is not None:
                 if wordSerch in result['docDescription']:
                     print(result['docID'],result['docDescription'],result['filerName'])
                     self.yuho.append(result)
                     count2 +=1
+        print(count,count2) 
+
+        
+    def GetNewYuho(self,kessan_day,doctype_code):
+        count=0
+        count2=0
+        self.res_text["results"]
+
+        for result in self.res_text["results"]:
+            count +=1
+            #if result['results']['docDescription'] is not None:
+            if result['docDescription'] is not None :
+                if result['docTypeCode'] == doctype_code and result['periodEnd'] == kessan_day :
+                    print(result['docID'],result['docDescription'],result['filerName'],result['periodEnd'])
+                    self.yuho.append(result)
+                    count2 +=1
         print(count,count2)       
+        return count2
         
     
